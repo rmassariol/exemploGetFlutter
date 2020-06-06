@@ -8,24 +8,26 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 void main() {
-  runApp(GetMaterialApp(
-    //normal
-    //  home: MyHomePage(),
+  runApp(
+    GetMaterialApp(
+      //normal
+      //  home: MyHomePage(),
 
-    initialRoute: '/',
-    //rota nomeada
-    namedRoutes: {
-      '/': GetRoute(
-        page: MyHomePage(),
-      ),
-      '/segudaTela': GetRoute(
-        page: Tela2(),
-      ),
-      '/terceiraTela': GetRoute(
-        page: Tela3(),
-      )
-    },
-  ));
+      initialRoute: '/',
+      //rota nomeada
+      namedRoutes: {
+        '/': GetRoute(
+          page: MyHomePage(),
+        ),
+        '/segudaTela': GetRoute(
+          page: Tela2(),
+        ),
+        '/terceiraTela': GetRoute(
+          page: Tela3(),
+        )
+      },
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {

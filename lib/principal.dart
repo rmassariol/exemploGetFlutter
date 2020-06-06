@@ -18,13 +18,14 @@ class MyHomePage extends StatelessWidget {
               'You have pushed the button this many times:',
             ),
             GetBuilder<Controller>(
-                init: Controller(),
-                builder: (_) {
-                  return Text(
-                    '${_.counter}',
-                    style: Theme.of(context).textTheme.headline4,
-                  );
-                }),
+              init: Controller(),
+              builder: (_) {
+                return Text(
+                  '${_.counter}',
+                  style: Theme.of(context).textTheme.headline4,
+                );
+              },
+            ),
             FlatButton(
               color: Colors.blue,
               onPressed: () {
